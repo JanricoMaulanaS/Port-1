@@ -492,6 +492,17 @@ span {
 }
 
 .footer-iconTop a i {
-  font-size: 1.5rem;
-  color: var(--second-bg-color);
+  font-size: 2rem; /* Default size */
+}
+
+@media (max-width: 768px) {
+  .footer-iconTop a i {
+    font-size: 3rem; /* Size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-iconTop a i {
+    font-size: 4rem; /* Size for mobile devices */
+  }
 }
