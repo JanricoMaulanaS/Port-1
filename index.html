@@ -118,5 +118,15 @@
         played = true;
       }
     });
+
+    // Ensure audio plays on mobile devices
+    document.addEventListener('touchstart', function () {
+      if (!played) {
+        const audio = document.getElementById('myAudio');
+        audio.loop = true; // Set loop dari JavaScript
+        audio.play();
+        played = true;
+      }
+    }, { once: true });
   </script>
 </body>

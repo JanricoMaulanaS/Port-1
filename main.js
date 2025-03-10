@@ -82,3 +82,11 @@ window.addEventListener('scroll', function () {
     played = true;
   }
 });
+window.addEventListener('touchstart', function () {
+  if (!played) {
+    const audio = document.getElementById('myAudio');
+    audio.loop = true; // Set loop dari JavaScript
+    audio.play();
+    played = true;
+}
+});
