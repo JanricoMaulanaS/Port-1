@@ -67,9 +67,18 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
     Typed Js 
 ====================== */
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "Backend Developer", "Wibu"],
+  strings: ["Frontend Developer", "Backend Developer", "RICCCCCC"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
+});
+let played = false;
+window.addEventListener('scroll', function () {
+  if (!played && window.scrollY > 1) {
+    const audio = document.getElementById('myAudio');
+    audio.loop = true; // Set loop dari JavaScript
+    audio.play();
+    played = true;
+  }
 });

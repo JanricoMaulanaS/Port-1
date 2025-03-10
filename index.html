@@ -53,8 +53,6 @@
         <!-- add link for your CV into `href` -->
         <a href="https://hayukkk.my.canva.site/" class="btn">Lihat CV</a>
       </div>
-
-
     </section>
 
     <!-- ==========================================
@@ -68,7 +66,12 @@
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
         <p>
-            Hello, my name is Janrico Maulana Sofyan. I am an Informatics Engineering student and a proud graduate of SMAN 1 Binjai Langkat, class of 2022. My passion lies in the realm of technology, with a particular focus on programming and software development. I am deeply interested in technological innovations and am committed to continuously learning and growing in this ever-evolving field.
+          Hello, my name is Janrico Maulana Sofyan. I am an Informatics
+          Engineering student and a proud graduate of SMAN 1 Binjai Langkat,
+          class of 2022. My passion lies in the realm of technology, with a
+          particular focus on programming and software development. I am deeply
+          interested in technological innovations and am committed to
+          continuously learning and growing in this ever-evolving field.
         </p>
       </div>
     </section>
@@ -102,3 +105,18 @@
     <script src="main.js"></script>
   </body>
 </html>
+<body>
+  <audio id="myAudio" src="Sempurna (Acoustic Instrumental).mp3"></audio>
+
+  <script>
+    let played = false;
+    window.addEventListener('scroll', function () {
+      if (!played && window.scrollY > 1) {
+        const audio = document.getElementById('myAudio');
+        audio.loop = true; // Set loop dari JavaScript
+        audio.play();
+        played = true;
+      }
+    });
+  </script>
+</body>

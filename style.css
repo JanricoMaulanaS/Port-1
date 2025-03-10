@@ -408,6 +408,28 @@ span {
 }
 
 /* ==========================================
+              Playlist
+=========================================== */
+.playlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Sesuaikan jarak antar elemen sesuai kebutuhan */
+}
+
+.playlist-box {
+  flex: 1 1 calc(33.333% - 1rem); /* Mengatur lebar setiap box agar 3 box muat dalam satu baris */
+  box-sizing: border-box;
+}
+
+.playlist-layer {
+  padding: 1rem;
+  background: #1f242d; /* Ganti warna background sesuai kebutuhan */
+  border-radius: 0.5rem;
+  text-align: center;
+  border: none; /* Tambahkan ini untuk menghilangkan border */
+}
+
+/* ==========================================
               Contact
 =========================================== */
 .contact h2 {
@@ -476,7 +498,6 @@ span {
   padding: 0.5rem;
   background: var(--main-color);
   border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
